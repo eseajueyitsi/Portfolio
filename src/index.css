@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,7 +8,179 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.App{
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: var(--bs-font-sans-serif);
 
+}
+.header{
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+  font-weight:bolder;
+  text-decoration: underline;
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+  display:block;
+  padding-top: 1rem!important;
+  padding-bottom: 1rem!important;
+}
+
+.header:hover{
+  text-decoration: None;
+}
+
+.PortfolioBox{
+  /* justify-content: space-between; */
+}
+
+.py-3 {
+  padding-top: 1rem!important;
+  padding-bottom: 1rem!important;
+}
+
+.scrollingBar{
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  padding-top: 0.75rem;
+  padding-bottom: 0.25rem;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.scrollingcomponents{
+  text-align: center;
+  padding: 0.5rem;
+  color: #6c757d;
+  text-decoration:underline;
+  font-family: var(--bs-font-sans-serif);
+}
+
+
+.slidingBox{
+  background-color: #212529!important;
+  margin-bottom: 1.5rem;
+  border-radius:1rem;
+  padding:3rem;
+  margin-top:1rem;
+  text-align:left;
+}
+.sHeader{
+  font-style: italic;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  color: #fff;
+}
+.sParagraph{
+  color:#fff;
+  margin-top: 1rem!important;
+  margin-bottom: 1rem!important;
+}
+.allCards{
+  display: grid;
+  margin: 15px;
+  align-items: center;
+  grid-template-columns: auto auto ;
+
+
+}
+.listBox{
+  float: right;
+  width: 90%;
+  margin-bottom:2rem;
+  padding:2rem;
+  border-radius:1rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+}
+
+.cardTitle{
+  font-family:"Playfair Display", Georgia, "Times New Roman", serif;
+}
+.cardDate{
+  color:#6c757d
+}
+
+.exploreLink, .exploreLinkContent{
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+.exploreLink:hover ,.exploreLinkContent:hover{
+  color:#282095;
+
+}
+
+.Description{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; 
+  
+}
+.listBox:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.contentContainer{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+}
+.information1{
+  border-bottom: 2px solid #e5e5e5;
+  padding-bottom:10px
+
+}
+.information2{
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.contentLeft{
+  display:flex;
+  flex-direction: column;
+  text-align:left;
+  padding-top:2%;
+}
+.contentRight{
+  padding-top:5%;
+  margin-left:5%;
+}
+.aboutMe{
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: calc(1.275rem + .3vw);
+  font-style: italic!important;
+  margin-bottom:1rem;
+}
+.contentCards{
+  background-color:#f8f9fa;
+  padding:1.5rem;
+  padding-top:0.5rem;
+  margin-bottom: 1rem;
+  border-radius:1rem;
+  display:flex;
+  flex-direction:column
+
+}
+.Introduction{
+  margin-bottom: 0.25rem;
+  font-size: 2.5rem;
+  font-family:"Playfair Display", Georgia, "Times New Roman", serif
+}
+.exploreLinkContent{
+  margin:0.5rem;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

@@ -1,0 +1,32 @@
+[
+    {
+        "homework": "HW1",
+        "title": "Personas & StoryBoarding",
+        "Date" : "October 4 2022",
+        "color": "green",
+        "Description": "Observed real users interacting with an interface and created a persona for these users and illustrated a storyboard for one of the users"
+    },
+
+    {
+        "homework": "HW2",
+        "title": "Respnsive Redesign",
+        "Date" : "October 18 2022",
+        "color": "blue",
+        "Description": "Redesigned a pharmacy's website along with providing low fidelity and high fidelity mockups and critiques of the original"
+    },
+
+    {
+        "homework": "HW4",
+        "title": "Iterative Design",
+        "Date" : "November 9 2022",
+        "color": "red",
+        "Description": "Designed an interactive interace with figma for Almond: an emerging start up that specializes in woman's care"
+    },
+    {
+        "homework": "HW5",
+        "title": "Development",
+        "Date" : "November 29 2022",
+        "color": "gold",
+        "Description": "Developed an interactive interface with components and props for a shoe shop in react which supports filtering and sorting"
+    }
+]
