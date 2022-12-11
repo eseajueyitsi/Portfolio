@@ -1,15 +1,5 @@
-export default function Header({}){
-    return (
-
-    <div className="PortfolioBox">
-      <a className="header">
-        Portfolio
-      </a>
-
-      <div className="otherProjects">
-
-      </div>
-    </div>
-
-    );
-  }
+export default function responsiveRedesign(){
+  return (<div>
+      <h4>This is for the responsive Redesign at the moment so I am going to see what happens</h4>
+  </div>)
+}
