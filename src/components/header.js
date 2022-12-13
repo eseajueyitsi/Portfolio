@@ -4,10 +4,10 @@ export default function Header({functions, changer}){
     return (
     <div className="PortfolioBox">
       <a className="header" onClick={() => changer(functions[4])}>
-        Portfolio
+       Portfolio
       </a>
       <div className="scrollingBar">
-        <a className="scrollingcomponents" onClick={() => changer(functions[0])}>Persona&StoryBoard</a>
+        <a className="scrollingcomponents" onClick={() => changer(functions[0])}>Persona & StoryBoard</a>
         <a className="scrollingcomponents"onClick={() => changer(functions[1])}>Responsive Redesign</a>
         <a className="scrollingcomponents" onClick={() => changer(functions[2])}>Iterative Design and Evaluation</a>
         <a className="scrollingcomponents"onClick={() => changer(functions[3])}>Development</a>

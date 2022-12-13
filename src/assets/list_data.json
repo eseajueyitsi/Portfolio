@@ -1,32 +1,32 @@
 [
     {
-        "homework": "HW1",
+        "homework": "Ten One Tea House",
         "title": "Personas & StoryBoarding",
         "Date" : "October 4 2022",
-        "color": "green",
+        "color": "#eeb6bb",
         "Description": "Observed real users interacting with an interface and created a persona for these users and illustrated a storyboard for one of the users"
     },
 
     {
-        "homework": "HW2",
-        "title": "Respnsive Redesign",
+        "homework": "D&B Pharmacy",
+        "title": "Responsive Redesign",
         "Date" : "October 18 2022",
-        "color": "blue",
+        "color": "#eeb6bb",
         "Description": "Redesigned a pharmacy's website along with providing low fidelity and high fidelity mockups and critiques of the original"
     },
 
     {
-        "homework": "HW4",
+        "homework": "Almond",
         "title": "Iterative Design",
         "Date" : "November 9 2022",
-        "color": "red",
+        "color": "#eeb6bb",
         "Description": "Designed an interactive interace with figma for Almond: an emerging start up that specializes in woman's care"
     },
     {
-        "homework": "HW5",
+        "homework": "Sneaker Junkies",
         "title": "Development",
         "Date" : "November 29 2022",
-        "color": "gold",
+        "color": "#eeb6bb",
         "Description": "Developed an interactive interface with components and props for a shoe shop in react which supports filtering and sorting"
     }
 ]

@@ -1,5 +1,13 @@
 export default function iterativeDesign(){
-    return (<div>
-        <h4>This is for the Iterative design at the moment so I am going to see what happens</h4>
+    return (
+    
+    <div>
+        <div className="topPortion">
+            <a className="outsideHeader">Iterative Design</a>
+            <div className="aboutThisProject">
+                <h4 className="aboutTitle">About this Project</h4>
+                <p className="aboutContent"> I observed real users interacting with an interface and created a persona for these users and illustrated a storyboard for one of the users</p>
+            </div>
+        </div>
     </div>)
 }

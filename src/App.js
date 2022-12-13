@@ -63,7 +63,7 @@ function content(){
 
     <div className="contentRight">
     <div className= "contentCards"><h4 class="aboutMe"> About Me</h4>
-    There is something that should be going under here
+    <a className="exploreLinkContent">There is something that should be going under here</a>
     </div>
 
     <div className= "contentCards"> 
