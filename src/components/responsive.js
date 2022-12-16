@@ -11,20 +11,33 @@ import lowfidelitysmartphone from "../images/lowfidelitysmartphone.png"
 import lowfidelitytablet from "../images/lowfidelitytablet.png"
 import uistyleguide from "../images/uistyleguide.png"
 import usability from "../images/usability.png"
+import Typewriter from 'typewriter-effect';
 
-
-
+function typeObject(string, pause){
+  return(
+    <Typewriter onInit={(typewriter) => {
+      typewriter.pauseFor(pause)
+      typewriter.changeDelay(40);
+      typewriter.typeString(string).callFunction(() => {console.log('String typed out!');})
+        .start()
+        }}>
+        </Typewriter>
+  )
+}
 export default function responsiveRedesign(){
+  let ntitle = "Responsive Redesign"
+  console.log("I am here in the new function, why is it not updating a new one")
+  let about = "About this Project"
+  let content = "We were tasked with redesigning a website so that it is more usable and efficient. This assignment allowed us to practice working with\
+   HTML and CSS and it gave us more experience in identifying and fixing flaws in interfaces. I chose to redesign D&B Pharmacy, a pharmaceutical company which allows the users to buy prescription drugs."
   return (
   
   <div>
     <div className="topPortion">
-        <a className="outsideHeader">Responsive Redesign</a>
+        <a className="outsideHeader">{typeObject(ntitle,0)}</a>
         <div className="aboutThisProject">
-            <h4 className="aboutTitle">About this Project</h4>
-            <p className="aboutContent"> We were tasked with redesigning a website so that it is more usable and efficient. This assignment allowed us to practice working with HTML and CSS,
-                                          and it gave us more experience in identifying and fixing flaws in interfaces. I chose to redesign D&B Pharmacy, a pharmaceutical company which allows 
-                                                    the users to buy prescription drugs.</p>
+            <h4 className="aboutTitle">{typeObject(about,1500)}</h4>
+            <p className="aboutContent"> {typeObject(content,3000)}</p>
         </div>
     </div>
 
@@ -57,7 +70,6 @@ function part2(){
     <h4 className="seudoTitle">Visual Redesign</h4>
 
     <div className="group3">
-      {/* <strong className="smallerTitle" style={{color}}> Low Fidelity</strong> */}
       <div><img className= "redesignTop4" src={lowfidelitydesktop}alt="lowfidelitydesktop.png"></img></div>
       <div class="redesigncol0">
         <img className= "redesignTop2" src={lowfidelitytablet}alt="lowfidelitytablet.png"></img>
@@ -67,7 +79,6 @@ function part2(){
 
 
     <div className="group3">
-      {/* <strong className="smallerTitle" style={{color}}> Low Fidelity</strong> */}
       <div><img className= "redesignTop4" src={highfidelitydesktop}alt="highfidelitydesktop.png"></img></div>
       <div class="redesigncol0">
         <img className= "redesignTop2" src={highfidelitytablet}alt="highfidelitytablet.png"></img>

@@ -1,20 +1,37 @@
 import iterative18 from "../images/iterative18.png"
+import Typewriter from 'typewriter-effect';
+import sneakers from "../images/sneakers.png"
+
+function typeObject(string, pause){
+    return(
+      <Typewriter onInit={(typewriter) => {
+        typewriter.pauseFor(pause)
+        typewriter.changeDelay(40);
+        typewriter.typeString(string).callFunction(() => {console.log('String typed out!');})
+          .start()
+          }}>
+          </Typewriter>
+    )
+  }
+
 export default function development(){
+    let title = "Development"
+    let about = "About this Project"
+    let content = "This is a simple ecommerce react application which supported filtering and sorting. For this project\
+    I created a shoe site where the user could add and delete from the cart. This application was created from the React.js framework"
     return (
     
     <div>
         <div className="topPortion">
-            <a className="outsideHeader">Development</a>
+            <a className="outsideHeader">{typeObject(title,0)}</a>
             <div className="aboutThisProject">
-                <h4 className="aboutTitle">About this Project</h4>
-                <p className="aboutContent"> A simple ecommerce react application which supported filtering and sorting. For this project
-                                            I created a shoe site where the user could add and delete from the cart. This application was created
-                                            from the React.js framework</p>
+                <h4 className="aboutTitle">{typeObject(about,1500)}</h4>
+                <p className="aboutContent"> {typeObject(content,3000)}</p>
             </div>
         </div>
 
     {part1()}
-    
+    {part2()}
     </div>
     )
 }
@@ -41,6 +58,13 @@ function part1(){
 
 function part2(){
     return (
-        <div className="Link to the submission"></div>
+        <div className="Link to the submission">
+            <h4 className="seudoTitle" style={{marginBottom:"0%", paddingBottom:"0%"}}>Sneaker Junkies Website</h4>
+            <h5 style={{margin:"0%}"}}> Click on the Link Below to View The Full Website  </h5>
+            <a href="https://tiredcheetah112.github.io/Development">
+                <img src={sneakers} className="flower"></img>
+            </a>
+        </div>
+
     )
 }

@@ -16,19 +16,35 @@ import iterative14 from "../images/iterative14.png"
 import iterative15 from "../images/iterative15.png"
 import iterative16 from "../images/iterative16.png"
 import iterative17 from "../images/iterative17.png"
+import Typewriter from 'typewriter-effect';
 
+function typeObject(string, pause){
+    return(
+      <Typewriter onInit={(typewriter) => {
+        typewriter.pauseFor(pause)
+        typewriter.changeDelay(40);
+        typewriter.typeString(string).callFunction(() => {console.log('String typed out!');})
+          .start()
+          }}>
+          </Typewriter>
+    )
+  }
 
 
 
 export default function iterativeDesign(){
+    let title = "Iterative Design"
+    let about = "About this Project"
+    let content = "We designed an interactive high-fidelity prototype of a telehealth and appointment scheduling mobile app Almond.\
+    We presented some sketches that we created to brainstorm some ideas. We then moved on to the low and high fidelity prototype."
     return (
     
     <div>
         <div className="topPortion">
-            <a className="outsideHeader">Iterative Design</a>
+            <a className="outsideHeader">{typeObject(title,0)}</a>
             <div className="aboutThisProject">
-                <h4 className="aboutTitle">About this Project</h4>
-                <p className="aboutContent"> We designed an interactive high-fidelity prototype of a telehealth and appointment scheduling mobile app Almond. We presented some sketches that we created to brainstorm some ideas. We then moved on to the low and high fidelity prototype.</p>
+                <h4 className="aboutTitle">{typeObject(about,1500)}</h4>
+                <p className="aboutContent"> {typeObject(content,3000)}</p>
             </div>
         </div>
 

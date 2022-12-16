@@ -2,16 +2,35 @@ import part1im from "../images/part1.png"
 import persona1 from "../images/boywhothinks.png"
 import persona2 from "../images/girlwhothinks.png"
 import storyBoard from "../images/storyboard.png"
+import Typewriter from 'typewriter-effect';
+
+
+
+function typeObject(string, pause){
+    return(
+      <Typewriter onInit={(typewriter) => {
+        typewriter.pauseFor(pause)
+        typewriter.changeDelay(40);
+        typewriter.typeString(string).callFunction(() => {console.log('String typed out!');})
+          .start()
+          }}>
+          </Typewriter>
+    )
+  }
 
 export default function personaAndStoryBoard(){
+    let title = "Persona & StoryBoard"
+    let about = "About this Project"
+    let content = "I observed real users interacting with an interface and created a persona for these users\
+    and illustrated a storyboard for one of the users"
     return (
     
     <div>
         <div className="topPortion">
-            <a className="outsideHeader">Persona & StoryBoard</a>
+            <a className="outsideHeader">{typeObject(title,0)}</a>
             <div className="aboutThisProject">
-                <h4 className="aboutTitle">About this Project</h4>
-                <p className="aboutContent"> I observed real users interacting with an interface and created a persona for these users and illustrated a storyboard for one of the users</p>
+                <h4 className="aboutTitle">{typeObject(about,1500)}</h4>
+                <p className="aboutContent"> {typeObject(content,3000)}</p>
             </div>
         </div>
         {part1()}

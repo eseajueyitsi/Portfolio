@@ -9,7 +9,7 @@ export default function CardItem({homework,title, Date, color, Description}){
         <p className= "Description">{Description}</p>
         </div>
         <div className="rightBox"></div>
-        <a className="exploreLink"> See More</a>
+        <a className="exploreLink" > See More</a>
         </div>
     );
   }

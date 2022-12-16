@@ -175,6 +175,10 @@ body {
 .information1{
   border-bottom: 2px solid #e5e5e5;
   padding-bottom:10px;
+  padding-top: 0%;
+  font-style: italic;
+  padding-left: 8%;
+  padding-right: 8%;
   text-align: center;
 
 }
@@ -193,11 +197,13 @@ body {
   display:flex;
   flex-direction: column;
   text-align:left;
-  padding-top:2%;
 }
 .contentRight{
-  padding-top:5%;
   margin-left:5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .aboutMe, .aboutMe0, .aboutMe1{
   font-size: calc(1.275rem + .3vw);
@@ -205,7 +211,6 @@ body {
   font-family: Apple Chancery, cursive;
   margin-bottom:1rem;
   text-decoration: none;
-  /* color: #3c4145; */
 }
 .contentCards{
   background-color:#f8f9fa;
@@ -246,6 +251,9 @@ body {
   text-align: center;
   align-items: center;
 }
+.outsideHeader{
+  width: 45%;
+}
 .group3{
   margin-bottom: 5%;
 }
@@ -255,8 +263,10 @@ body {
   margin-left: 3%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding-bottom: 0%;
+  width: 100%;
+  height: 100%;
 }
-.topPortion{
+.topPortion,.topPortion0{
   display: flex;
   flex-direction:row;
   margin-top:3%;
@@ -265,9 +275,7 @@ body {
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 2rem;
 }
-.aboutThisProject{
 
-}
 
 .aboutTitle, .aboutContent{
   color:#3c4145;
@@ -342,7 +350,7 @@ li{
 .qheader0{
   text-align: center;
 }
-.part1Persona, .part2Persona, .part3Persona,.part1Redesign, .part2Redesign, .part1Iterative, .part2Iterative, .part3Iterative, .part4Iterative, .part5Iterative{
+.part1Persona, .part2Persona, .part3Persona,.part1Redesign, .part2Redesign, .part1Iterative, .part2Iterative, .part3Iterative, .part4Iterative, .part5Iterative, .part1Development{
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 2rem;
 }
@@ -366,6 +374,14 @@ li{
   box-shadow: rgb(0 0 0 / 40%) 0px 5px 15px;
   border-radius: 1rem;
 }
+.flower{
+  max-width: 91%;
+  max-height: 91%;
+  border-radius: 1rem;
+  opacity: 80%;
+  box-shadow: rgba(0, 0, 0, 0.30) 0px 2px 7px;
+}
+
 .personaImage1{
   margin-right: 3%;
   padding: 2%;

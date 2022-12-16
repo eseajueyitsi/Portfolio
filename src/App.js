@@ -8,24 +8,74 @@ import personaAndStoryBoard from './components/persona';
 import iterativeDesign from './components/iterative';
 import development from './components/Development';
 import responsiveRedesign from './components/responsive';
+import Typewriter from 'typewriter-effect';
+import flower from "./images/flower.jpeg"
 
+
+
+
+function typeObject(string, pause){
+
+  return(
+    <Typewriter onInit={(typewriter) => {
+      typewriter.pauseFor(pause)
+      typewriter.changeDelay(40);
+      typewriter.typeString(string).callFunction(() => {console.log('String typed out!');})
+        .start()
+        }}>
+
+        
+        </Typewriter>
+  )
+}
 
 
 function App() {
   const[projectChanger, changeDisplay] = useState(portfolioHomePage());
-  const functionList = [personaAndStoryBoard,responsiveRedesign,iterativeDesign, development,portfolioHomePage]
+  const functionList = [first,second,third, development,portfolioHomePage,typeObject]
 
   function sliding(){
+    let header = "Welcome to my portfolio!"
+    let string = "I am a Computer Science student at Brown University, and I am a student in cs1300 (UIUX). I am interested in creating interactive, interesting and beautiful digital experiences 🌸🌸🌸"
     return (
     <div className="slidingBox">
-      <h1 className ="sHeader">Welcome To My Portfolio</h1>
+      <h1 className ="sHeader">{typeObject(header,1000)}</h1>
       <p className="sParagraph"> 
-      Something is going to be put here but I do not know what that is going to
-      look like at the moment. I am probably going to go for something that is sliding
+        {typeObject(string, 2500)}
       </p>
     </div>)
   }
 
+  function first(){
+    return(
+      <div>
+        {personaAndStoryBoard()}
+      </div>
+    )
+  }
+  function second(){
+    return(
+      <div>
+        <div></div>
+        {responsiveRedesign()}
+      </div>
+    )
+  }
+  function third(){
+    return(
+      <div>
+        <div></div><div></div>
+        {iterativeDesign()}
+      </div>
+    )
+  }
+  function fourth(){
+    return(
+      <div>
+        {development}
+      </div>
+    )
+  }
 
   function cardMapping(){
     return (
@@ -52,30 +102,26 @@ function App() {
     )
   }
 
+
 function content(){
  return(
   <div className= "contentContainer"> 
     <div className="contentLeft">
-      <h2 className="Introduction"> Introduction</h2>
-      <div className="information1"> This is a portfolio that is built from the nonsense</div>
-      <div className = "information2"> There is some more nonsense that is on the bottom, I need to figure out what I am doing here</div>
+      <h2 className="Introduction"> Checkout My Art</h2>
+      <div className="information1"> “The richness I achieve comes from Nature, the source of my inspiration.”</div>
+      <div className="information2"><img className= "flower" src={flower}alt="flower.png"></img></div>
+      
     </div>
 
     <div className="contentRight">
     <div className= "contentCards"><h4 class="aboutMe"> About Me</h4>
-    <a className="exploreLinkContent">There is something that should be going under here</a>
+    <a className="exploreLinkContent">I am enthralled by digital photography and the color pink</a>
     </div>
 
     <div className= "contentCards"> 
-      <h4 class="aboutMe">Homework Submissions</h4>
-      <div className="lleft">
-        <a className="exploreLinkContent" onClick={() => changeDisplay(personaAndStoryBoard)}> HW1</a>
-        <a className="exploreLinkContent" onClick={() => changeDisplay(responsiveRedesign)}> HW2</a>
-      </div> 
-      <div className="rright">
-        <a className="exploreLinkContent" onClick={() => changeDisplay(iterativeDesign)}> HW4</a>
-        <a className="exploreLinkContent" onClick={() => changeDisplay(development)}> HW5</a>         
-      </div> 
+      <h4 class="aboutMe">Favorite Design Quote</h4>
+      <a className="exploreLinkContent">"Design is intelligence made visible." -- Alina Wheeler</a>
+
     </div>
     <div className= "contentCards"> 
     
@@ -103,6 +149,7 @@ function content(){
     </div>
   );
 }
+
 
 
 
